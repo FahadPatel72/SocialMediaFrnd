@@ -11,7 +11,7 @@ const AdminDesk = () => {
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await API.get("api/users/all", {
+        const response = await API.get("https://socialmediabackend-1-khue.onrender.com/api/users/all", {
           headers: {
             'x-auth-token': token,
           },

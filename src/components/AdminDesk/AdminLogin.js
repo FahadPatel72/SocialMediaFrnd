@@ -12,7 +12,7 @@ const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await API.post("admin/login", {
+      const response = await API.post("https://socialmediabackend-1-khue.onrender.com/api/admin/login", {
         username,
         password,
       });

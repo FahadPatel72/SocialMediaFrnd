@@ -35,7 +35,7 @@ const Userform = () => {
     });
 
     try {
-      const response = await API.post('users/upload',
+      const response = await API.post('https://socialmediabackend-1-khue.onrender.com/api/users/upload',
         form,
         {
           headers: { "Content-Type": "multipart/form-data" },
