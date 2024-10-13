@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import API from "../../api";
 import './AdminDesk.css';
 
 const AdminDesk = () => {
@@ -10,7 +11,7 @@ const AdminDesk = () => {
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get("http://localhost:4000/api/users/all", {
+        const response = await API.get("api/users/all", {
           headers: {
             'x-auth-token': token,
           },

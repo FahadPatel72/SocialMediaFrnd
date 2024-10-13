@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import API from "../../api";
 import './Userform.css';
 
 const Userform = () => {
@@ -35,8 +35,7 @@ const Userform = () => {
     });
 
     try {
-      const response = await axios.post(
-        "http://localhost:4000/api/users/upload",
+      const response = await API.post('users/upload',
         form,
         {
           headers: { "Content-Type": "multipart/form-data" },
