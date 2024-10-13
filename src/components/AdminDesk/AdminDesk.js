@@ -40,7 +40,7 @@ const AdminDesk = () => {
               {user.images.map((image, index) => (
                 <img 
                   key={index} 
-                  src={`http://localhost:4000/uploads/${image}`} 
+                  src={`https://socialmediabackend-1-khue.onrender.com/uploads/${image}`} 
                   alt={user.name} 
                   onError={(e) => e.target.src = 'fallback_image_path.jpg'}   className="user-image"
                 />
