@@ -1,0 +1,102 @@
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-image: url("../../bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.dashboard h2 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.inpt-field {
+  margin-top: 5rem;
+  height: 80%;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+
+  overflow-y: auto;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.user-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .inpt-field {
+    width: 90%;
+  }
+
+  .user-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inpt-field {
+    width: 95%;
+  }
+
+  .user-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inpt-field {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .user-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .inpt-field {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .user-image {
+    width: 60px;
+    height: 60px;
+  }
+}

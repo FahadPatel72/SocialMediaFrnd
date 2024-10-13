@@ -1,0 +1,106 @@
+.admin-login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  background-image: url("../../bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.admin-form {
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  text-align: start;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+button[type="submit"] {
+  width: 10%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .admin-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .admin-form {
+    width: 70%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-form {
+    width: 85%;
+    padding: 1.2rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-form {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
